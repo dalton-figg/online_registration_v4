@@ -1,25 +1,31 @@
 /* Global 'Reset' */
 
 ::placeholder {
+  /* simpliest way to achieve this effect */
   text-align: right;
   font-style: italic;
 }
 
 * {
+  /* basic reset */
   margin: 0;
   box-sizing: border-box;
   line-height: 1.5;
 }
 
 html {
-  font-family: "Merriweather", serif;
+  /* needs more fallback fonts */
+  font-family: "Merriweather", system-ui, sans-serif;
 }
 
 p,
 label,
 footer {
+  /* could use a variable */
   color: rgb(151, 151, 151);
 }
+
+/* again, classes could be used so that not every fieldset/legend/hr is affected by the styles to keep it DRY and robust */
 
 fieldset {
   display: flex;
@@ -125,6 +131,7 @@ button[type="submit"] {
 }
 
 .flex-input {
+  /* on a large project, flexbox utility classes would be important */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -161,6 +168,7 @@ button[type="submit"] {
     align-items: center;
     flex-direction: row;
   }
+  /* theres obviously oppurtunity to add classes here, but the selectors lesson was recent so wanted to test some out */
   input:not([type="checkbox"]):not([type="radio"]),
   select {
     max-width: 500px;
