@@ -56,6 +56,8 @@ textarea {
 }
 
 textarea {
+  padding: 1rem 0.75rem;
+  margin-top: 0.75rem;
   height: 100px;
 }
 
@@ -77,7 +79,13 @@ button[type="submit"] {
 }
 
 .zipcode {
-  width: 50%;
+  max-width: 50%;
+}
+
+@media only screen and (min-width: 360px) {
+  .zipcode {
+    max-width: 160px;
+  }
 }
 
 /* Page Styles */
@@ -95,6 +103,8 @@ button[type="submit"] {
 }
 
 .main {
+  max-width: 768px;
+  margin: 0 auto;
   padding: 0 1.25rem;
 }
 
@@ -117,10 +127,12 @@ button[type="submit"] {
   justify-content: flex-end;
   flex-direction: row-reverse;
   gap: 1rem;
+  margin-top: 0.75rem;
 }
 
-.flex-input--alt {
-  margin-top: 0.75rem;
+.flex-input--alt + p,
+.flex-input--alt + label {
+  margin-top: 1.5rem;
 }
 
 .flex-input + .flex-input {
@@ -130,4 +142,20 @@ button[type="submit"] {
 .footer {
   text-align: center;
   font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-input {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  input:not([type="checkbox"]):not([type="radio"]),
+  select {
+    max-width: 500px;
+    width: 100%;
+  }
+  input:not([type='checkbox']).zipcode {
+    max-width: 25%;
+  }
 }
