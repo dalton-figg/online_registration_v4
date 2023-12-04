@@ -61,9 +61,17 @@ textarea {
   height: 100px;
 }
 
+input,
+select,
+textarea,
+button {
+  transition: all 0.35s ease;
+}
+
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+button:focus {
   outline: 2px solid rgb(16, 16, 149);
 }
 
@@ -142,6 +150,9 @@ button[type="submit"] {
 .footer {
   text-align: center;
   font-style: italic;
+  /* padding added for visuals, trying to meet the exceeds expectations of Change the background color for at least ONE of the main sections of the site.*/
+  padding: 1rem;
+  background-color: aliceblue;
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,7 +166,7 @@ button[type="submit"] {
     max-width: 500px;
     width: 100%;
   }
-  input:not([type='checkbox']).zipcode {
+  input:not([type="checkbox"]).zipcode {
     max-width: 25%;
   }
 }
