@@ -1,0 +1,133 @@
+/* Global 'Reset' */
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+p,
+label,
+footer {
+  color: rgb(151, 151, 151);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding: 1.25rem 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+hr {
+  border-width: 2px;
+  border-color: rgb(10, 10, 44);
+  margin-top: 1rem;
+}
+
+hr + hr {
+  margin-top: 0.25rem;
+  border-width: 1px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  padding: 0 0.75rem;
+  height: 45px;
+  border: none;
+  background: rgb(241, 240, 240);
+  border-radius: 0.15rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid rgb(16, 16, 149);
+}
+
+button[type="submit"] {
+  color: white;
+  appearance: none;
+  border: none;
+  border-radius: 0.15rem;
+  background-color: rgb(64, 146, 145);
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.zipcode {
+  width: 50%;
+}
+
+/* Page Styles */
+
+.header {
+  background-color: rgb(43, 43, 84);
+  color: white;
+  padding: 2rem;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main {
+  padding: 0 1.25rem;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.flex-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-input--alt {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+
+.flex-input--alt {
+  margin-top: 0.75rem;
+}
+
+.flex-input + .flex-input {
+  margin-top: 1rem;
+}
+
+.footer {
+  text-align: center;
+  font-style: italic;
+}
