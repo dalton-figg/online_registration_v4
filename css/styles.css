@@ -164,9 +164,8 @@ button[type="submit"] {
 
 @media only screen and (min-width: 768px) {
   .flex-input {
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 500px;
   }
   /* theres obviously oppurtunity to add classes here, but the selectors lesson was recent so wanted to test some out */
   input:not([type="checkbox"]):not([type="radio"]),
